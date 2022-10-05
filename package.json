@@ -1,0 +1,37 @@
+{
+	"name": "ifj-projekt-bot",
+	"description": "Our bot for IFJ",
+	"version": "0.0.0",
+	"main": "lib/index.js",
+	"bin": {
+		"ifj-projekt-bot": "lib/cli.js"
+	},
+	"scripts": {
+		"start": "node lib/cli",
+		"test": "npx nslibmgr test"
+	},
+	"author": "Prokop Schield",
+	"dependencies": {
+		"@prokopschield/argv": "^0.1.2",
+		"discord.js": "^14.5.0",
+		"doge-config": "^0.3.20",
+		"nodesite.eu": "1.2.0-34"
+	},
+	"devDependencies": {
+		"@types/node": ">=16"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/polimich/IFJ-Projekt-Bot.git"
+	},
+	"keywords": [],
+	"license": "GPL-3.0-or-later",
+	"bugs": {
+		"url": "https://github.com/polimich/IFJ-Projekt-Bot/issues"
+	},
+	"homepage": "https://github.com/polimich/IFJ-Projekt-Bot#readme",
+	"types": "./lib/index.d.ts",
+	"directories": {
+		"lib": "lib"
+	}
+}
