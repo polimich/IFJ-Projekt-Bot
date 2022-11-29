@@ -5,6 +5,6 @@ import argv from "@prokopschield/argv";
 import { bot } from "./bot";
 import loader from "./modules/loader";
 
-bot.login(argv.expectMutate(["token"]).token);
+bot.login(process.env.token || argv.expectMutate(["token"]).token);
 
 bot.on("ready", (bot) => loader(bot));
